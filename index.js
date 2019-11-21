@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express()
-const port = 8080
+const port = process.env.PORT || 80
 
 // Parse URL-encoded bodies (as sent by HTML forms)
 app.use(express.urlencoded({extended: true}));
